@@ -79,6 +79,7 @@ class Model extends Schema.Class<Model>("Config.Model")({
   // Partial: unset fields fall back to the base model's capabilities, then the defaults.
   capabilities: Capabilities.mapFields((fields) => ({
     tools: optional(fields.tools),
+    reasoning: optional(fields.reasoning),
     input: optional(fields.input),
     output: optional(fields.output),
   }))
